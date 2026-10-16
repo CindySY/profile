@@ -4,6 +4,10 @@ test('navigation, filters, accessible interactions and content',async({page})=>{
  await page.goto('/');
  await expect(page.locator('main > section')).toHaveCount(5);
  await expect(page.locator('h1')).toContainText('DESIGNING');
+ await expect(page.locator('.profile-photo')).toHaveAttribute('src','https://skylewolf.xyz/assets/img/profile-img.jpg');
+ await expect(page.locator('.milestone')).toHaveCount(5);
+ for(const year of ['2010','2012','2015','2020','2025']) await expect(page.locator('.milestone').filter({hasText:year})).toBeVisible();
+ await expect(page.locator('.milestone').last()).toContainText('AI Web Developer and Senior UIUX Designer');
  await page.getByRole('button',{name:'MENU'}).click();
  await expect(page.getByRole('dialog',{name:''}).first()).toBeVisible();
  await page.getByRole('navigation').getByRole('link',{name:/Work/}).click();

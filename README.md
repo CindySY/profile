@@ -21,11 +21,11 @@ The initial repository contained only a README. After enabling network destinati
 
 The interaction reference was studied for its oversized typography, fullscreen navigation, vertical project rhythm, career presentation, and large contact treatment. This implementation uses its own structure and visual identity.
 
-Career milestones remain thematic because detailed dates and employers were unavailable. No employment history, outcomes, dates, CV, or additional social profiles were invented. The 13-year experience wording is preserved from the source.
+Career milestones use the five dates and roles provided by Cindy: 2010, 2012, 2015, 2020, and 2025. No employers, outcomes, CV, or additional social profiles were invented. The 13-year experience wording is preserved from the source.
 
 **Concept Lab requires original content before launch:** its two editable entries are clearly labeled placeholders, not completed client work. Motion and creative technology skill rows do not claim a preview when no verified media exists.
 
-- `src/data/profile.ts`: biography and thematic career milestones
+- `src/data/profile.ts`: biography, portrait, and user-provided dated career milestones
 - `src/data/projects.ts`: categories, descriptions, images, real external links
 - `src/data/skills.ts`: disciplines, tools, associated project IDs
 - `src/data/concepts.ts`: independent, editable concept entries
