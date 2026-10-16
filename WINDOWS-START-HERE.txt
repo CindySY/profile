@@ -1,0 +1,31 @@
+SKYLEWOLF - WINDOWS QUICK START
+
+1. Install Node.js LTS from https://nodejs.org/ if needed.
+2. Right-click skylewolf-complete.zip and choose Extract All.
+3. Open the extracted profile folder. You will see package.json.
+4. Click the File Explorer address bar, type cmd, and press Enter.
+5. In Command Prompt, run:
+
+   npm ci
+   npm run dev
+
+6. Open http://localhost:5173 in your browser (or the address printed).
+   Keep Command Prompt open. Press Ctrl+C to stop the server.
+
+PRODUCTION BUILD
+Run npm run build. Upload the contents of dist to your hosting.
+Do not double-click dist/index.html; use the development server above.
+
+OPTIONAL BROWSER TESTS
+Run npx playwright install chromium and then npm test.
+
+DELIVERED
+React + TypeScript source; five responsive sections; scroll animations;
+24 original portfolio images optimized to WebP; editable data files;
+production dist build; browser tests; setup and deployment documentation.
+
+STATUS
+Production build passed. Desktop, mobile, and reduced-motion tests passed
+in the cloud environment. Concept Lab entries remain labeled placeholders
+awaiting original content. No deployment has been performed. Project links
+were sourced from the original portfolio; availability may change.
